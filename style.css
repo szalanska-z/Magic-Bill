@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@400;700&display=swap");
+
+/* font-family: "Montserrat", sans-serif; */
+/* font-family: "Dancing Script", cursive; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  background-image: linear-gradient(315deg, violet 0%, coral 74%);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  height: 700px;
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  border-radius: 10px;
+  /* box-shadow: 0 0 40px rgb(200, 193, 193); */
+  box-shadow: 0 0 40px rgb(0, 0, 0);
+}
+
+.info {
+  text-align: center;
+  font-size: 30px;
+}
+
+.info h1 {
+  margin-bottom: 10px;
+  font-size: 60px;
+}
+
+.ball-img {
+  position: relative;
+  height: 250px;
+}
+
+.ball-img img {
+  position: absolute;
+  top: 30px;
+  left: 250px;
+  width: 300px;
+  cursor: pointer;
+}
+
+.question-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.question-area h2 {
+  font-size: 30px;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.question-area input {
+  font-size: 20px;
+  border-radius: 5px;
+  border: 1px solid black;
+  box-shadow: 0 0 5px rgb(124, 121, 121);
+  width: 70%;
+  padding: 10px 20px;
+  background-color: rgb(255, 255, 255, 0.5);
+}
+
+.question-area input:focus {
+  background-color: rgb(255, 255, 255, 0.9);
+}
+.question-area .answer {
+  margin-top: 30px;
+  font-size: 24px;
+}
+.question-area .answer span {
+  font-weight: bold;
+}
+
+.question-area .error {
+  font-weight: bold;
+  font-size: 24px;
+  color: rgb(102, 27, 102);
+}
+
+.shake-animation {
+  animation: shake 1s 1;
+}
+
+@keyframes shake {
+  0& {
+    left: 90px;
+  }
+  20% {
+    left: 340px;
+  }
+  40% {
+    left: 250px;
+  }
+  60% {
+    left: 340px;
+  }
+  80% {
+    left: 250px;
+  }
+  100% {
+    left: 300px;
+  }
+}
